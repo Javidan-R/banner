@@ -49,12 +49,12 @@
         color: white;
         text-align: center;
         padding: 20px;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(65, 64, 64, 0.7);
         max-width: 80%;
         border-radius: 15px;
         opacity: 0;
         transform: translateY(30px);
-        transition: opacity 1s ease, transform 1s ease, bottom 1s ease; /* Optimized animation */
+        transition: opacity 1s ease, transform 2s ease, bottom 2s ease; /* Optimized animation */
       }
 
       /* Show content when slide is active */
@@ -160,38 +160,14 @@
         <!-- Slide 2 -->
         <div class="swiper-slide">
           <img src="img/news/marvel.jpg" alt="Marvel" />
-          <div class="swiper-content">
-            <h2>Tezliklə qapılarımızı sizin üçün açırıq!</h2>
-            <p>
-              Əyləncə, alış-veriş və gözəl zaman keçirmək üçün ən doğru ünvan -
-              Sevinc Mall.
-            </p>
-            <p class="hashtag">Gəlin #sevinc dolu anları birlikdə yaşayaq.</p>
-          </div>
         </div>
         <!-- Slide 3 -->
         <div class="swiper-slide">
           <img src="img/news/blueclub.jpg" alt="Blueclub" />
-          <div class="swiper-content">
-            <h2>Tezliklə qapılarımızı sizin üçün açırıq!</h2>
-            <p>
-              Əyləncə, alış-veriş və gözəl zaman keçirmək üçün ən doğru ünvan -
-              Sevinc Mall.
-            </p>
-            <p class="hashtag">Gəlin #sevinc dolu anları birlikdə yaşayaq.</p>
-          </div>
         </div>
         <!-- Slide 4 -->
         <div class="swiper-slide">
           <img src="img/news/redclub.jpg" alt="Redclub" />
-          <div class="swiper-content">
-            <h2>Tezliklə qapılarımızı sizin üçün açırıq!</h2>
-            <p>
-              Əyləncə, alış-veriş və gözəl zaman keçirmək üçün ən doğru ünvan -
-              Sevinc Mall.
-            </p>
-            <p class="hashtag">Gəlin #sevinc dolu anları birlikdə yaşayaq.</p>
-          </div>
         </div>
       </div>
 
@@ -216,7 +192,7 @@
           disableOnInteraction: false /* Autoplay continues even after interaction */,
         },
         effect: "fade" /* Fade transition effect */,
-        speed: 800 /* Transition speed between slides */,
+        speed: 1000 /* Transition speed between slides */,
         pagination: {
           el: ".swiper-pagination",
           clickable: true /* Pagination dots are clickable */,
