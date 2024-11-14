@@ -61,7 +61,7 @@
       .swiper-slide-active .swiper-content {
         opacity: 1;
         transform: translateY(0);
-        bottom: 5%; /* Animate from bottom */
+        bottom: 10%; /* Animate from bottom */
       }
 
       .swiper-content h2 {
@@ -85,11 +85,13 @@
 
       /* Pagination styles */
       .swiper-pagination {
-        bottom: 10%;
+        bottom: 5%; /* Better position for pagination */
       }
 
       .swiper-pagination-bullet {
         background-color: rgba(255, 255, 255, 0.7);
+        width: 12px;
+        height: 12px;
       }
 
       .swiper-pagination-bullet-active {
@@ -131,6 +133,10 @@
 
         .swiper-content .hashtag {
           font-size: 1.2rem;
+        }
+
+        .swiper-container {
+          height: 60vh; /* Adjust height for small screens */
         }
       }
     </style>
