@@ -1,0 +1,144 @@
+/* Global Reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Banner container */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  background-image: url("https://via.placeholder.com/1200x800"); /* Add your banner image here */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: background-position 0.5s ease-in-out;
+}
+
+/* Banner link */
+.banner-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Banner content */
+.banner-content {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 80%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* Soft shadow for emphasis */
+}
+
+/* Banner heading */
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Banner text */
+.banner p {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Button */
+.banner-btn {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: #e67e22;
+}
+
+.banner-btn:focus {
+  outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .banner {
+    height: 60vh; /* Reduced height for tablets */
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner p {
+    font-size: 1.125rem;
+  }
+
+  .banner-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 50vh; /* Reduced height for mobile devices */
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner-btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 45vh; /* Further reduced height for small screens */
+  }
+
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner p {
+    font-size: 0.95rem;
+  }
+
+  .banner-btn {
+    padding: 6px 15px;
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sevinc Mall Banner</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <style>
+      /* General styles */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        overflow-x: hidden;
+      }
+
+      /* Swiper container */
+      .swiper-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .swiper-slide {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Content container styles */
+      .swiper-content {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        max-width: 80%;
+        border-radius: 15px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+
+      .swiper-slide-active .swiper-content {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .swiper-content h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: slideUp 0.8s ease forwards;
+      }
+
+      .swiper-content p {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        animation: fadeIn 1s ease forwards;
+      }
+
+      .swiper-content .hashtag {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #ffd700; /* Gold color */
+        animation: slideUp 1.2s ease forwards;
+      }
+
+      /* Animation for content */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        0% {
+          transform: translateY(30px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      /* Pagination styles */
+      .swiper-pagination {
+        bottom: 10%;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #ffd700;
+      }
+
+      /* Navigation buttons */
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 10px;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .swiper-content h2 {
+          font-size: 2rem;
+        }
+
+        .swiper-content p {
+          font-size: 1.2rem;
+        }
+
+        .swiper-content .hashtag {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .swiper-content h2 {
+          font-size: 1.5rem;
+        }
+
+        .swiper-content p {
+          font-size: 1rem;
+        }
+
+        .swiper-content .hashtag {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Swiper container -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="img/news/happyland.jpg" alt="Happyland" />
+          <div class="swiper-content">
+            <h2>Tezliklə qapılarımızı sizin üçün açırıq!</h2>
+            <p>
+              Əyləncə, alış-veriş və gözəl zaman keçirmək üçün ən doğru ünvan -
+              Sevinc Mall.
+            </p>
+            <p class="hashtag">Gəlin #sevinc dolu anları birlikdə yaşayaq.</p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="img/news/marvel.jpg" alt="Marvel" />
+          <div class="swiper-content">
+            <h2>Tezliklə qapılarımızı sizin üçün açırıq!</h2>
+            <p>
+              Əyləncə, alış-veriş və gözəl zaman keçirmək üçün ən doğru ünvan -
+              Sevinc Mall.
+            </p>
+            <p class="hashtag">Gəlin #sevinc dolu anları birlikdə yaşayaq.</p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="img/news/blueclub.jpg" alt="Blueclub" />
+          <div class="swiper-content">
+            <h2>Tezliklə qapılarımızı sizin üçün açırıq!</h2>
+            <p>
+              Əyləncə, alış-veriş və gözəl zaman keçirmək üçün ən doğru ünvan -
+              Sevinc Mall.
+            </p>
+            <p class="hashtag">Gəlin #sevinc dolu anları birlikdə yaşayaq.</p>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <img src="img/news/redclub.jpg" alt="Redclub" />
+          <div class="swiper-content">
+            <h2>Tezliklə qapılarımızı sizin üçün açırıq!</h2>
+            <p>
+              Əyləncə, alış-veriş və gözəl zaman keçirmək üçün ən doğru ünvan -
+              Sevinc Mall.
+            </p>
+            <p class="hashtag">Gəlin #sevinc dolu anları birlikdə yaşayaq.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination dots -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
